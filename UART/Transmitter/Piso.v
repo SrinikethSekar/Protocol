@@ -21,7 +21,7 @@ reg [10:0] stop_count;
 reg [1:0] state, next_state;
 
 	always@(posedge baud_clk or negedge rst_n)
-		
+
 		begin
 			
 			if(!rst_n)
