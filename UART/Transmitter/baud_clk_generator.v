@@ -30,7 +30,7 @@ module baud_generator(
                 baud_clk <= ~baud_clk;  
             end else begin
                 ticks <= ticks + 1'd1;
-                baud_clk = baud_clk;
+                baud_clk <= baud_clk;
             end
         end
     end
