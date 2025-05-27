@@ -5,7 +5,6 @@
 // Date:   26/05/2025
 //
 ///////////////////////////////////////////////
-
 module Master #(parameter DATA = 32,ADDR =32)(
 	input  wire    		     pclk   , // Clock
 	input  wire  		       presetn, // Active-low reset
