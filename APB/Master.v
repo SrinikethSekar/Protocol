@@ -4,18 +4,18 @@
 // Design: APB Protocol Master
 // Date:   26/05/2025
 //
-///////////////////////////////////////////////
+/////////////////////////////////////////////// 
 module Master #(parameter DATA = 32,ADDR =32)(
-	input  wire    		     pclk   , // Clock
-	input  wire  		       presetn, // Active-low reset
-	input  wire 		       pready , // indication of slave is ready
-	input  wire [DATA-1:0] prdata , // read data
-
-	output reg  [ADDR-1:0] paddr  , //address bus
-	output reg  		       pwrite , //write-HIGH(1)read-LOW(0)
-	output reg  [DATA-1:0] pwdata , //write data, valid when prwite is 1
-	output reg             psel   , //selection of the slave
-	output reg  		       penable  //indication of the enable phase in the 2nd cycle
+        	input  wire    		     pclk   , // Clock
+        	input  wire  		       presetn, // Active-low reset
+        	input  wire 		       pready , // indication of slave is ready
+        	input  wire [DATA-1:0] prdata , // read data
+        
+        	output reg  [ADDR-1:0] paddr  , //address bus
+        	output reg  		       pwrite , //write-HIGH(1)read-LOW(0)
+        	output reg  [DATA-1:0] pwdata , //write data, valid when prwite is 1
+        	output reg             psel   , //selection of the slave
+        	output reg  		       penable  //indication of the enable phase in the 2nd cycle
 
 	);
 	
